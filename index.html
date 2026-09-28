@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore local prairie trails and plan your next outdoor adventure.">
+
+    <title>Prairie Trails</title>
+
+    <!-- Bootstrap Grid only to keep the framework import small -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap-grid.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header">
+        <h1>Prairie Trails</h1>
+        <p>Find your next outdoor adventure!</p>
+
+        <nav class="site-nav" aria-label="Main navigation">
+            <ul class="site-nav__list">
+                <li><a class="site-nav__link" href="#about">About</a></li>
+                <li><a class="site-nav__link" href="#trails">Trails</a></li>
+                <li><a class="site-nav__link" href="#contact">Contact Us</a></li>
+                <li><a class="site-nav__link" href="#faq">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+
+        <section class="page-section" id="about" aria-labelledby="about-heading">
+            <h2 id="about-heading">About</h2>
+
+            <p>
+                Prairie Trails helps people discover simple outdoor adventures
+                across the prairies.
+            </p>
+
+            <p>
+                Our goal is to make it easy to choose a trail based on distance
+                and difficulty.
+            </p>
+        </section>
+
+        <section class="page-section" id="trails" aria-labelledby="trails-heading">
+            <h2 id="trails-heading">Trails</h2>
+
+            <p>Choose a trail for your next outdoor adventure.</p>
+
+            <div class="row">
+                <article class="trail-card col-12 col-md-6">
+                    <h3 class="trail-card__title">Prairie Loop</h3>
+                    <p><strong>Difficulty:</strong> Easy</p>
+                    <p><strong>Distance:</strong> 3 km</p>
+                    <p>A gentle trail for beginners</p>
+                </article>
+
+                <article class="trail-card col-12 col-md-6">
+                    <h3 class="trail-card__title">Meadow Path</h3>
+                    <p><strong>Difficulty:</strong> Moderate</p>
+                    <p><strong>Distance:</strong> 5 km</p>
+                    <p>A slightly longer trail for those looking for a bit more challenge</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="page-section" id="contact" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Contact Us</h2>
+
+            <p>
+                Have a question about Prairie Trails? Contact our team by email.
+            </p>
+
+            <p>
+                <a class="contact-link" href="mailto:hello@example.com">
+                    Email our team
+                </a>
+            </p>
+        </section>
+
+        <section class="page-section" id="faq" aria-labelledby="faq-heading">
+            <h2 id="faq-heading">Frequently Asked Questions</h2>
+
+            <details class="faq-item">
+                <summary>What should I bring on a walk?</summary>
+                <p>
+                    Bring water, comfortable footwear, and clothing suitable
+                    for the weather.
+                </p>
+            </details>
+
+            <details class="faq-item">
+                <summary>How do I choose a trail?</summary>
+                <p>
+                    Check the distance, difficulty, and current conditions
+                    before heading out.
+                </p>
+            </details>
+
+            <details class="faq-item">
+                <summary>Are the trails beginner friendly?</summary>
+                <p>
+                    Some trails are suitable for beginners. Check the listed
+                    difficulty before choosing a trail.
+                </p>
+            </details>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Prairie Trails.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,109 @@
+:root {
+    --color-background: #f5f7f2;
+    --color-text: #243024;
+    --color-primary: #243024;
+    --color-accent: #365c2a;
+    --color-surface: #ffffff;
+    --spacing-small: 1rem;
+    --spacing-large: 2rem;
+    --border-radius: 0.5rem;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-text);
+    line-height: 1.6;
+    margin: 0;
+    padding: var(--spacing-small);
+}
+
+.site-header {
+    background-color: var(--color-primary);
+    color: var(--color-surface);
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+}
+
+.site-nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-small);
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.site-nav__link {
+    color: var(--color-surface);
+    padding: 0.5rem;
+}
+
+.page-section {
+    margin-top: 1.5rem;
+    padding: var(--spacing-small);
+    background-color: var(--color-surface);
+    border-radius: var(--border-radius);
+}
+
+.trail-card {
+    padding: var(--spacing-small);
+}
+
+.trail-card__title {
+    color: var(--color-accent);
+    margin-top: 0;
+}
+
+.contact-link {
+    color: var(--color-accent);
+}
+
+.faq-item {
+    margin-bottom: var(--spacing-small);
+}
+
+.faq-item summary {
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+.site-footer {
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.skip-link {
+    position: absolute;
+    top: -5rem;
+    left: 1rem;
+    background-color: var(--color-surface);
+    color: var(--color-text);
+    padding: 0.75rem 1rem;
+    z-index: 10;
+}
+
+.skip-link:focus {
+    top: 1rem;
+}
+
+@media (min-width: 48rem) {
+    body {
+        padding: var(--spacing-large);
+    }
+
+    .page-section {
+        padding: var(--spacing-large);
+    }
+}
+
+@media (min-width: 64rem) {
+    body {
+        max-width: 75rem;
+        margin-inline: auto;
+    }
+
+    .site-header {
+        padding: 3rem;
+    }
+}
