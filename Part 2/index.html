@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Ask questions about hiking trails.">
+    <title>Trail Enquiry</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+    <h1>Trail Enquiry Form</h1>
+
+    <form id="enquiryForm" novalidate>
+        <fieldset>
+            <legend>Your Trail Enquiry</legend>
+
+            <label for="name">Name (required)</label>
+            <input id="name" name="name" type="text" autocomplete="name" required>
+
+            <label for="email">Email (required)</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+
+            <label for="trailLength">Trail Length</label>
+            <select id="trailLength" name="trailLength">
+                <option value="any">Any length</option>
+                <option value="short">Under 5 km</option>
+                <option value="medium">5–10 km</option>
+                <option value="long">Over 10 km</option>
+            </select>
+
+            <label for="message">Message (required)</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+        </fieldset>
+
+        <div id="formErrors" aria-live="polite"></div>
+        <button type="submit">Send Enquiry</button>
+    </form>
+</main>
+<script type="module" src="js/script.js"></script>
+</body>
+</html>
