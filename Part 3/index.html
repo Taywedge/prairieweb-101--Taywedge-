@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Alberta Hiking Trails | Map & Calgary Weather</title>
+    <meta name="description" content="Explore Alberta hiking trails with an interactive Calgary area map and live weather information.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      media="print"
+      onload="this.media='all'">
+    <link rel="stylesheet" href="style-min.css">
+</head>
+<body>
+    <main id="main">
+        <h1>Trailhead Map & Live Weather</h1>
+        
+<h2>Alberta Trail Map</h2>
+
+
+<p>OpenStreetMap is a third-party service and may collect your IP address when the map loads.</p>
+
+<button type="button" id="loadMap">Load Map</button>
+
+<iframe
+    id="trailMap"
+    title="Map of Calgary area trails"
+    data-src="https://www.openstreetmap.org/export/embed.html?bbox=-114.30%2C50.90%2C-113.90%2C51.15&amp;layer=mapnik"
+    width="600"
+    height="300"
+    loading="lazy"
+    referrerpolicy="strict-origin-when-cross-origin"
+    sandbox="allow-scripts allow-same-origin"
+    hidden>
+</iframe>
+
+<p>
+    <a href="https://www.openstreetmap.org/#map=10/51.05/-114.07">
+        Open the map separately
+    </a>
+</p>
+
+<h2>Live Calgary Weather</h2>
+<p id="weather">Loading weather...</p>
+
+<h2>Alberta Hiking Trails</h2>
+
+<picture>
+    <source srcset="images/hiking.webp" type="image/webp">
+    <img src="images/hiking.jpg" alt="A scenic hiking trail" loading="lazy">
+</picture>
+
+    </main>
+    <script type="module" src="script-min.js"></script>
+</body>
+</html>
