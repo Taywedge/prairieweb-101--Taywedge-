@@ -43,18 +43,49 @@
                 </tbody>
             </table>
         </section>
+        
+        <section class="page-section" id="weather-section">
+    <h2>Calgary Weather</h2>
+    <p id="weather">Loading weather...</p>
+        </section>
 
+        <iframe
+    id="trailMap"
+    title="Map of Calgary area trails"
+    src="https://www.openstreetmap.org/export/embed.html?bbox=-114.30%2C50.90%2C-113.90%2C51.15&amp;layer=mapnik"
+    width="600"
+    height="300"
+    referrerpolicy="strict-origin-when-cross-origin"
+    sandbox="allow-scripts allow-same-origin">
+    </iframe>
+    
         <section class="page-section" id="contact">
             <h2>Contact Us</h2>
-            <form class="contact-form" action="#">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">Message</label>
-                <textarea id="message" name="message" required></textarea>
-                <button type="button">Demo Form</button>
-            </form>
+        <form id="enquiryForm" class="contact-form" novalidate>
+        <fieldset>
+            <legend>Your Trail Enquiry</legend>
+
+            <label for="name">Name (required)</label>
+            <input id="name" name="name" type="text" autocomplete="name" required>
+
+            <label for="email">Email (required)</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+
+            <label for="trailLength">Trail Length</label>
+            <select id="trailLength" name="trailLength">
+                <option value="any">Any length</option>
+                <option value="short">Under 5 km</option>
+                <option value="medium">5–10 km</option>
+                <option value="long">Over 10 km</option>
+            </select>
+
+            <label for="message">Message (required)</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+        </fieldset>
+
+        <div id="formErrors" aria-live="polite"></div>
+        <button type="submit">Send Enquiry</button>
+        </form>
         </section>
 
         <section class="page-section" id="faq">
@@ -75,5 +106,7 @@
     <footer class="site-footer">
         <p>&copy; 2026 Prairie Trails.</p>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
+
